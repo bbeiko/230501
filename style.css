@@ -140,9 +140,14 @@ footer{
   header ul {
     margin-right: 4%;
   }
-  
+
   .mainvisual {
-    height: calc(100vh - 60px);
+    /* 600px以下になるとaboutの上余白がなくなる原因がこれですね↓
+    mv画像には600px付与していますが、こちらのheight設定でdiv clsss=mainvisualが多分400pxくらい？？になってしまってました。（要するに画像の高さとdivの高さが不揃いなせいで上にせりあがってしまっている）
+    一旦画像の600pxにあわせちゃっていいのでこちらコメントアウトしておきます。
+    コメント外すなどしてどのように変わるか確認してみてください！
+     */
+    /* height: calc(100vh - 60px); */
   }
 
   /* about */
